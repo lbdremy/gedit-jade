@@ -5,12 +5,13 @@
 sudo mv gedit-jade/jade.lang /usr/share/gtksourceview-2.0/language-specs/jade.lang
 </code></pre>
 
+Don't forget to restart gedit after the installation.
+
 ##Support highlight:
     -Tag
     -Tag Text
     -Comments (inline only)
     -Nesting
-    -Block expansion
     -Attributes
     -Doctypes
     -Filter
@@ -18,5 +19,6 @@ sudo mv gedit-jade/jade.lang /usr/share/gtksourceview-2.0/language-specs/jade.la
 
 ##Don't support highlight:
     -Block comment
+    -Block expansion
 
 Improvements and corrections are welcome!

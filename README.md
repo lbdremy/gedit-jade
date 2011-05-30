@@ -21,4 +21,8 @@ Don't forget to restart gedit after the installation.
     -Block comment
     -Block expansion
 
-Improvements and corrections are welcome!
+##Ressources gedit highlighting:
+[Language Definition v2.0 Tutorial](http://developer.gnome.org/gtksourceview/stable/lang-tutorial.html)
+[Language Definition v2.0 Reference](http://developer.gnome.org/gtksourceview/stable/lang-reference.html)
+
+--Improvements and corrections are welcome!

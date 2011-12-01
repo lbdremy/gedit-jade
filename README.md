@@ -1,28 +1,34 @@
-#Gedit Highlighting for Jade.
+# gedit-jade
 
-##Installation
-<pre><code>git clone https://lbdremy@github.com/lbdremy/gedit-jade.git
-sudo mv gedit-jade/jade.lang /usr/share/gtksourceview-2.0/language-specs/jade.lang
-</code></pre>
+## Installation
 
-Don't forget to restart gedit after the installation.
+ Download the language-spec:
 
-##Support highlight:
-    -Tag
-    -Tag Text
-    -Comments (inline only)
-    -Nesting
-    -Attributes
-    -Doctypes
-    -Filter
-    -Code
+      mkdir -p ~/.local/share/mime/packages
+      mkdir -p ~/.local/share/gtksourceview-3.0/language-specs
+      wget https://raw.github.com/lbdremy/gedit-jade/master/jade.lang -O ~/.local/share/gtksourceview-3.0/language-specs/jade.lang
 
-##Don't support highlight:
-    -Block comment
-    -Block expansion
+ Update the mime database:
 
-##Ressources gedit highlighting:
-[Language Definition v2.0 Tutorial](http://developer.gnome.org/gtksourceview/stable/lang-tutorial.html)
-[Language Definition v2.0 Reference](http://developer.gnome.org/gtksourceview/stable/lang-reference.html)
+      cd ~/.local/share
+      update-mime-database mime
 
---Improvements and corrections are welcome!
+ Enjoy Jade syntax highlighting in gedit3!
+
+## Highlight support for:
+
+ * Tag
+ * Tag Text
+ * Comments (inline-only)
+ * Nesting
+ * Attributes
+ * Doctypes
+ * Filter
+ * Code
+
+## Community TODO's:
+
+ * Block comment
+ * Block expansion
+
+Your contributions are appreciated!

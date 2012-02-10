@@ -37,20 +37,6 @@ sudo mkdir -p /usr/share/gtksourceview-3.0/language-specs
 sudo wget https://raw.github.com/lbdremy/gedit-jade/master/jade.lang -O /usr/share/gtksourceview-3.0/language-specs/jade.lang
 ```
 
-### Update the mime database:
-
-Global
-
-```
-update-mime-database /usr/share/mime
-```
-
-User based update
-
-```
-update-mime-database ~/.local/share/mime
-```
-
  Restart gedit. Enjoy Jade syntax highlighting in gedit! 
 
 ## Highlight support for:

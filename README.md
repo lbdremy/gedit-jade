@@ -2,18 +2,56 @@
 
 ## Installation
 
- Download the language-spec:
+### For Gedit2: Local or global installation
 
-      mkdir -p ~/.local/share/mime/packages
-      mkdir -p ~/.local/share/gtksourceview-3.0/language-specs
-      wget https://raw.github.com/lbdremy/gedit-jade/master/jade.lang -O ~/.local/share/gtksourceview-3.0/language-specs/jade.lang
+ Installation based on the user
 
- Update the mime database:
+```
+mkdir -p ~/.local/share/mime/packages
+mkdir -p ~/.local/share/gtksourceview-2.0/language-specs
+wget https://raw.github.com/lbdremy/gedit-jade/master/jade.lang -O ~/.local/share/gtksourceview-2.0/language-specs/jade.lang
+```
 
-      cd ~/.local/share
-      update-mime-database mime
+ Global installation
+ 
+```
+sudo mkdir -p /usr/share/mime/packages
+sudo mkdir -p /usr/share/gtksourceview-2.0/language-specs
+sudo wget https://raw.github.com/lbdremy/gedit-jade/master/jade.lang -O /usr/share/gtksourceview-2.0/language-specs/jade.lang
+```
+### For Gedit3: Local or global installation
+ 
+ Installation based on the user
 
- Enjoy Jade syntax highlighting in gedit3!
+```
+mkdir -p ~/.local/share/mime/packages
+mkdir -p ~/.local/share/gtksourceview-3.0/language-specs
+wget https://raw.github.com/lbdremy/gedit-jade/master/jade.lang -O ~/.local/share/gtksourceview-3.0/language-specs/jade.lang
+```
+
+ Global installation
+ 
+```
+sudo mkdir -p /usr/share/mime/packages
+sudo mkdir -p /usr/share/gtksourceview-3.0/language-specs
+sudo wget https://raw.github.com/lbdremy/gedit-jade/master/jade.lang -O /usr/share/gtksourceview-3.0/language-specs/jade.lang
+```
+
+### Update the mime database:
+
+Global
+
+```
+update-mime-database /usr/share/mime
+```
+
+User based update
+
+```
+update-mime-database ~/.local/share/mime
+```
+
+ Restart gedit. Enjoy Jade syntax highlighting in gedit! 
 
 ## Highlight support for:
 

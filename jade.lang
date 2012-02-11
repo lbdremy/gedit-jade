@@ -49,7 +49,7 @@
 		</context>
         
 		<context id="attribute-name" class="no-spell-check">
-      <match>(\b\%{name}\s*)=</match>
+      <match>(\b\%{name}\s*) *=</match>
       <include>
         <context sub-pattern="1" style-ref="attribute-name"/>
       </include>
@@ -77,17 +77,17 @@
       </include>
     </context>
         
-		<context id="attributes">
-		  <start>\(</start>
-		  <end>\)</end>
-		  <include>
-          <context ref="attribute-name"/>
-          <context ref="attribute-value"/>
-          <context style-ref="error" extend-parent="false">
-            <match>\S</match>
-          </context>
-      </include>
-		</context>
+	<context id="attributes">
+		<start>\(</start>
+		<end>\)</end>
+		<include>
+			<context style-ref="error" extend-parent="false">
+				<match>"[^"]+" *[a-zA-Z0-9_-]+</match>
+			</context>	
+			<context ref="attribute-name"/>
+			<context ref="attribute-value"/>
+		</include>
+	</context>
 		
 		<context id="tags"  >
       <match>^\s*\b(a|abbr|acronym|address|area|article|aside|audio|b|base|big|blockquote|body|br|button|canvas|caption|cite|code|col|colgroup|dd|del|details|dfn|div|dl|dt|em|fieldset|figcaption|figure|footer|form|frame|frameset|h1|h2|h3|h4|h5|h6|head|header|hgroup|hr|html|i|iframe|img|input|ins|kbd|label|legend|li|link|map|mark|menu|meta|nav|noframes|noscript|object|ol|optgroup|option|p|param|pre|q|samp|script|section|select|small|span|strike|strong|style|sub|summary|sup|table|tbody|td|textarea|tfoot|th|thead|time|title|tr|tt|ul|var|var_keys|video)\s*\b[\?!:]{0,1}</match>

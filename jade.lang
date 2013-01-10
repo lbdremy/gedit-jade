@@ -105,7 +105,7 @@
     </context>
 		
     <context id="line-comment" style-ref="comment" end-at-line-end="true" class="comment" class-disabled="no-spell-check">
-      <start>/(/|if)</start>
+      <start>//</start>
       <include>
        <context ref="def:in-line-comment"/>
       </include>

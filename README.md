@@ -2,7 +2,7 @@
 
 ## Installation
 
-### For Gedit2: Local or global installation
+### For Gedit2 and [pluma](https://github.com/mate-desktop/pluma): Local or global installation
 
  Installation based on the user
 
